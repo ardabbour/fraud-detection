@@ -2,7 +2,7 @@ Fraud Detection in Insurance Claims
 --------------------------------------------------------------------------------
 
 This repo contains a Python script that attempts to improve on the fraud
-detection methods shown in depth `here`_:
+detection methods shown in depth `here`_.
 
 Dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
