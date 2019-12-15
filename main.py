@@ -13,12 +13,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # Metrics and scoring tools
 from sklearn.model_selection import cross_val_score
-from sklearn.metrics import (
-    accuracy_score,
-    precision_score,
-    recall_score,
-    classification_report,
-)
+from sklearn.metrics import accuracy_score, classification_report
 
 # Random forest classifier
 from sklearn.ensemble import RandomForestClassifier
@@ -94,9 +89,9 @@ if __name__ == "__main__":
 
     # Train a classifier using the best parameters
     BEST_PARAMS = COMBOS[ACCURACIES.index(max(ACCURACIES))]
-    CLF = RandomForestClassifier(n_estimators=combo[0], criterion=combo[1]).fit(
-        TRAIN_FEATURES, TRAIN_LABELS
-    )
+    CLF = RandomForestClassifier(
+        n_estimators=BEST_PARAMS[0], criterion=BEST_PARAMS[1]
+    ).fit(TRAIN_FEATURES, TRAIN_LABELS)
 
     # Make predictions using the trained classifier
     TRAIN_PREDICTIONS = CLF.predict(TRAIN_FEATURES)
