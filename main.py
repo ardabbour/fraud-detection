@@ -40,6 +40,10 @@ if __name__ == "__main__":
     DATA["incident_month"] = DATA["incident_date"].dt.month
     DATA["incident_day"] = DATA["incident_date"].dt.day
 
+    DATA["policy_bind_date"] = pd.to_datetime(DATA["policy_bind_date"], errors="coerce")
+    DATA["policy_bind_month"] = DATA["policy_bind_date"].dt.month
+    DATA["policy_bind_day"] = DATA["policy_bind_date"].dt.day
+
     # Drop useless columns
     DATA.drop(
         ["policy_number", "policy_bind_date", "incident_date", "incident_location",],
@@ -124,4 +128,5 @@ if __name__ == "__main__":
     ax.set_ylabel("Criterion\n0: 'gini, 1: 'entropy'")
     ax.set_zlabel("Accuracy")
     ax.set_title("5-Fold Cross Validation Accuracy Using Random Forests")
+    plt.savefig(fname="plot.pdf")
     plt.show()

@@ -4,6 +4,14 @@ Fraud Detection in Insurance Claims
 This repo contains a Python script that attempts to improve on the fraud
 detection methods shown in depth `here`_.
 
+Description
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The highest scoring model used only over-sampling, and did not smooth when
+target encoding. Furthermore, we use default sklearn libraries instead of writing
+many lines of code. Most importantly, we attempt to identify the best parameters
+using cross-validation.
+
 Dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
