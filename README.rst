@@ -33,13 +33,13 @@ License
 
 `MIT License`_
 
-.. _[here]: https://www.kaggle.com/roshansharma/insurance-claim
-.. _[category_encoders]: https://contrib.scikit-learn.org/categorical-encoding/
-.. _[imblearn]: https://imbalanced-learn.readthedocs.io/
-.. _[matplotlib]: https://matplotlib.org
-.. _[numpy]: https://www.numpy.org
-.. _[pandas]: https://pandas.pydata.org
-.. _[Python]: https://www.python.org
-.. _[sklearn]: https://scikit-learn.org
-.. _[Ubuntu]: https://www.ubuntu.com
-.. _[MIT License]: https://github.com/ardabbour/fraud-detection/blob/master/LICENSE
+.. _here: https://www.kaggle.com/roshansharma/insurance-claim
+.. _category_encoders: https://contrib.scikit-learn.org/categorical-encoding/
+.. _imblearn: https://imbalanced-learn.readthedocs.io/
+.. _matplotlib: https://matplotlib.org
+.. _numpy: https://www.numpy.org
+.. _pandas: https://pandas.pydata.org
+.. _Python: https://www.python.org
+.. _sklearn: https://scikit-learn.org
+.. _Ubuntu: https://www.ubuntu.com
+.. _MIT License: /LICENSE
